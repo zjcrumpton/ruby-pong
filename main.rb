@@ -15,6 +15,10 @@ right_color = Color.new('#f3975f')
 left_paddle = Paddle.new(1, left_color)
 right_paddle = Paddle.new(2, right_color)
 
+left_score = Text.new(left_paddle.score, x: 300, size: 100)
+right_score = Text.new(right_paddle.score, x: 650, size: 100)
+
+
 # Player Movement
 on :key_held do |event|
   if event.key == 'w'
@@ -51,6 +55,9 @@ update do
   right_paddle.body.y += right_paddle.speed
   left_paddle.hit_edge
   right_paddle.hit_edge
+
+  left_score.text = left_paddle.score
+  right_score.text = right_paddle.score
 end
 
 
