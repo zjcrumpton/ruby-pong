@@ -9,7 +9,6 @@ require 'socket'
 # Allow all scripts to access gems in the Gemfile
 Bundler.require(:default)
 
-require './lib/server.rb'
 require './lib/window.rb'
 require './lib/paddle.rb'
 require './lib/ball.rb'
