@@ -1,6 +1,6 @@
 background = Color.new('#b4619c')
-set title: 'Ruby-Pong', background: background, resizable: false, 
-width: 1000, height: 1000
+set title: 'Ruby-Pong', background: 'black', resizable: false, 
+width: 1000, height: 1000, frames: 200
 
 # Draws the dividing line in the center of the screen
 y = 24
